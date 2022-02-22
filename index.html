@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/survey.css".css"> <link rel="stylesheet"
+    href="css/bootstrap.min.css".css">
+  </head>
+  <body>
+    <main id="main">
+      <form id="survey-form" action="">
+        <h1 id="title">Encuesta de Satisfacción de Clientes</h1>
+        <p id="description">
+          Gracias por responder este formulario. Nos ayudará a mejorar nuestro
+          servicio
+        </p>
+        <div class="mb-3">
+          <label id="name-label" for="name" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Escribe tu nombre completo"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label id="email-label" for="email" class="form-label"
+            >Correo Electrónico</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label id="number-label" for="number" class="form-label">Edad</label>
+          <input
+            type="number"
+            class="form-control"
+            id="number"
+            placeholder="Por ejemplo = 25"
+            min="18"
+            max="50"
+          />
+        </div>
+        <div class="mb-3">
+          <label id="select-label" for="dropdown" class="form-label"
+            >Que tipo de producto adquiriste en la tienda?</label
+          >
+          <select
+            id="dropdown"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>Seleccione...</option>
+            <option value="1">Electrodomésticos</option>
+            <option value="2">Muebles del hogar</option>
+            <option value="3">Productos de jardinería</option>
+            <option value="4">Productos Electrónicos</option>
+            <option value="5">Artículos deportivos</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label id="radio-label" for="radios" class="form-label"
+            >Recomendaría a un amigo conprar en nuestra tienda?</label
+          >
+          <div id="radios">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radio"
+                id="radio1"
+                value="1"
+                checked
+              />
+              <label class="form-check-label" for="radio1">
+                Definitivamente
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radio"
+                value="2"
+                id="radio2"
+              />
+              <label class="form-check-label" for="radio2"
+                >Probáblemente
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radio"
+                value="3"
+                id="radio3"
+              />
+              <label class="form-check-label" for="radio3">
+                No estoy seguro</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label id="check-label" for="checks" class="form-label"
+            >Que crees que debemos mejorar?</label
+          >
+          <div id="checks">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="1"
+                id="check1"
+              />
+              <label class="form-check-label" for="check1"> Los Precios </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="2"
+                id="check2"
+              />
+              <label class="form-check-label" for="check2">
+                La variedad de produtos
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="3"
+                id="check3"
+              />
+              <label class="form-check-label" for="check3">
+                Adicionar Mejores marcas
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="4"
+                id="check4"
+              />
+              <label class="form-check-label" for="check4">
+                Asesoría personalizada
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="5"
+                id="check5"
+              />
+              <label class="form-check-label" for="check5">
+                Rapidez en la entrega
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="campo-comentarios" class="form-label"
+            >algún comentario o sugerencia?</label
+          >
+          <textarea
+            class="form-control"
+            id="campo-comentarios"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <button id="submit" type="submit" class="btn btn-primary">
+          Enviar
+        </button>
+      </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
